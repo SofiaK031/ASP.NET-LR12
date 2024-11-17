@@ -1,0 +1,36 @@
+@model List<LR12.Models.CompanyModel>
+
+@{
+    ViewBag.Title = "Companies";
+    Layout = "_Layout";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/styles.css" />
+</head>
+
+<h2 class="my-h2 centered-text">@ViewBag.Title</h2>
+
+<table class="table table-hover my-table" id="companies-table">
+    <thead>
+    <tr>
+        <th class="centered-text">ID</th>
+        <th>Name</th>
+        <th>Address</th>
+            <th class="centered-text">Year of establishment</th>
+        <th>Industry</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var company in Model)
+    {
+        <tr>
+            <td class="centered-text">@company.Id</td>
+            <td>@company.Name</td>
+            <td>@company.Address</td>
+            <td class="centered-text">@company.YearOfEstablishment</td>
+            <td>@company.Industry</td>
+        </tr>
+    }
+    </tbody>
+</table>

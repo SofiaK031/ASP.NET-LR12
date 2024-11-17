@@ -1,0 +1,42 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.my-h2 {
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 0px;
+}
+
+.my-table {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px auto;
+}
+
+#users-table {
+    width: 50%;
+}
+
+#companies-table {
+    width: 70%;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+/*
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table th {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+
+.table td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}
+*/
